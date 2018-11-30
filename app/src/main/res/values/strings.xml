@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">City Tourister</string>
+    <string name="facebook_app_id">2206185453002665</string>
+    <string name="fb_login_protocol_scheme">fb2206185453002665</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="correo">Correo</string>
+    <string name="contrase_a">contraseña</string>
+    <string name="olvidar_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="aun_no_registrado">¿Aún no estas registrado?</string>
+    <string name="todo">TODO</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">facebook</string>
+    <string name="google">google</string>
+    <string name="iniciar_con">Iniciar con:</string>
+    <string name="logo">Logotipo ER</string>
+    <string name="registrarse">\nRegistrarse\n</string>
+    <string name="forma_sencilla">         Una forma sencilla y rápida\n</string>
+    <string name="iniciar_con_facebook">Iniciar con Facebook</string>
+    <string name="iniciar_con_twitter">Iniciar con Twitter</string>
+    <string name="iniciar_con_google">Iniciar con Google</string>
+    <string name="info_registro">No te preocupes, no haremos publicaciones \na tu nombre en tus perfiles de redes sociales</string>
+    <string name="saber_quien_eres">QUEREMOS SABER QUIÉN ERES</string>
+    <string name="nombre_completo_pregunta">¿Cuál es tu nombre completo?*</string>
+    <string name="escribe">Escribe…</string>
+    <string name="e_mail">Email*</string>
+    <string name="numero_telefonico">Número de teléfono</string>
+    <string name="elige_contra">Elige una contraseña*(Min. 6 caracteres)</string>
+    <string name="confirma_contra">Confirma tu contraseña*</string>
+    <string name="campos_obligatorios">* Campos obligatorios</string>
+    <string name="aceptar_terminos">Acepto los Términos y Condiciones de Uso</string>
+    <string name="registr_m">REGISTRARSE</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="API_KEY">AIzaSyAKAVsEPYZebHtQG36Bp_Vb3nYLRno5eXM</string>
+    <string name="compra_tus_boletos">COMPRA TUS BOLETOS</string>
+    <string name="title_activity_user_map">Map</string>
+</resources>

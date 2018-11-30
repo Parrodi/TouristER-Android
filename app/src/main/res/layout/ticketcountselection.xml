@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relLayouttickets">
+
+    <TextView
+        android:id="@+id/ticketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticketType"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="$150.00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ticketType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Adulto"
+        android:textColor="#00007f"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/lessTickets"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_alignBottom="@+id/numOfTickets"
+        android:layout_toStartOf="@+id/numOfTickets"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/moreTickets"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/numOfTickets"
+        android:layout_marginStart="-68dp"
+        android:layout_toEndOf="@+id/numOfTickets"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/numOfTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBottom="@id/ticketPrice"/>
+
+</RelativeLayout>

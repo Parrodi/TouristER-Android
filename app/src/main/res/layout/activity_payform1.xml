@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/pagoForma1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:srcCompat="@drawable/pago1" />
+
+        <TextView
+            android:id="@+id/textEscribeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/flechapregunta"
+            android:text="Tu Correo Electronico"
+            android:textColor="#707070"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"/>
+
+        <EditText
+            android:id="@+id/correoFormaPago"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Escribir el correo a donde llegara el boleto..."
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/textViewem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/flechapregunta"
+            android:text="Selecciona la fecha de Tu Viaje"
+            android:textColor="#707070"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"/>
+
+        <CalendarView
+            android:id="@+id/MyCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+        </CalendarView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Continuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000066"
+        android:onClick="dateSelected"
+        android:text="Continuar"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

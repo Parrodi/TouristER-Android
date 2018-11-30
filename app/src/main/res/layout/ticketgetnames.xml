@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relLayoutticketsnames">
+
+    <TextView
+        android:id="@+id/pasajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Pasajero 1"
+        android:textColor="#00007f"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nombrePasajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasajero"
+        android:layout_alignStart="@+id/pasajero"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="Nombre"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/edadPasajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombrePasajero"
+        android:layout_alignStart="@+id/pasajero"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="Edad"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/nombrePasajeroForm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/nombrePasajero"
+        android:layout_marginBottom="-4dp"
+        android:layout_toEndOf="@+id/nombrePasajero"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edadPasajeroForm"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:maxLength="2"
+        android:layout_alignBottom="@+id/edadPasajero"
+        android:layout_toEndOf="@+id/nombrePasajero"
+        android:layout_marginBottom="-4dp"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBottom="@id/edadPasajero"/>
+
+</RelativeLayout>

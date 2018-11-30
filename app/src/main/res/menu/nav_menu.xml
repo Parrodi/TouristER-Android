@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="TOURS"
+        android:icon="@drawable/boton_tour"
+        android:id="@+id/tours"/>
+    <item
+        android:title="BOLETOS"
+        android:icon="@drawable/botonticket"
+        android:id="@+id/tickets"/>
+    <item
+        android:title="MAPA"
+        android:icon="@drawable/mapamenu"
+        android:id="@+id/mapa"/>
+    <item
+        android:title="PARADAS"
+        android:icon="@drawable/botonsalidas"
+        android:id="@+id/salidas"/>
+    <item
+        android:title="OPCIONES"
+        android:icon="@drawable/botonmenu"
+        android:id="@+id/menus"/>
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botomNavigation"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/boleto"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/Tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            android:text="Tour"
+            android:textColor="#E21181"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nombreTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tour"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Nombre de Destino"
+            android:textColor="#043764" />
+
+        <TextView
+            android:id="@+id/Fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombreTour"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Fecha"
+            android:textColor="#E21181"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textoDeFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Fecha"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="2dp"
+            android:text="Nombre de Destino"
+            android:textColor="#043764" />
+
+        <TextView
+            android:id="@+id/Pasajeros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textoDeFecha"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Pasajeros"
+            android:textColor="#E21181"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/listaPasajeros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Pasajeros"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Pagado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Pasajeros"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:text="Pagado:"
+            android:textColor="#E21181"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Pagado"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FCB600"
+            android:text="DETALLES TOUR"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/botomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#fff"
+        app:itemIconTint="@color/nav_item_colors"
+        app:itemTextColor="@color/nav_item_colors"
+        app:menu="@menu/nav_menu">
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

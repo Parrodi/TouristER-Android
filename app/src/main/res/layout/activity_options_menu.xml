@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".actividades.OptionsMenuActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/botomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        app:itemIconTint="@color/nav_item_colors"
+        app:itemTextColor="@color/nav_item_colors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu">
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/botomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/perfil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textoPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="61dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toStartOf="@+id/profilebutton"
+                android:paddingEnd="20dp"
+                android:text="Mi Perfil"
+                android:textAlignment="textEnd"
+                android:textColor="#043764"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/profilebutton"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/botonperfil" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageLinea6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linea" />
+
+        <RelativeLayout
+            android:id="@+id/terminosCondiciones"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textoTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toStartOf="@+id/Termsbutton"
+                android:paddingEnd="20dp"
+                android:text="Terminos y Condiciones"
+                android:textAlignment="textEnd"
+                android:textColor="#043764"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/Termsbutton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/terms" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageLinea3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linea" />
+
+        <RelativeLayout
+            android:id="@+id/ayuda"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textoAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toStartOf="@+id/ayudabutton"
+                android:paddingEnd="20dp"
+                android:text="Ayuda"
+                android:textAlignment="textEnd"
+                android:textColor="#043764"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/ayudabutton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/help" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageLinea2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linea" />
+
+        <RelativeLayout
+            android:id="@+id/logOut"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textoCerrarS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toStartOf="@+id/logoutbutton"
+                android:paddingEnd="20dp"
+                android:text="Cerrar Sesión"
+                android:textAlignment="textEnd"
+                android:textColor="#043764"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/logoutbutton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/logout" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageLinea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linea" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
